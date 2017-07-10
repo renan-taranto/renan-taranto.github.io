@@ -1,24 +1,16 @@
-#Clean Blog by Start Bootstrap - Jekyll Version
+# renantaranto.com
 
-The official Jekyll version of the Clean Blog theme by [Start Bootstrap](http://startbootstrap.com/).
+This is the repository of my Jekyll-powered blog about software development hosted on GitHub Pages
 
-###[View Live Demo &rarr;](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/)
+In order to run it locally:
 
-## Before You Begin
+ 1. Install `ruby` and `gem`
+ 2. Install bundler: `$ gem install bundler`
+ 3. Clone this repository: `$ git clone git@github.com:renan-taranto/renan-taranto.github.io.git`
+ 4. Navigate to the cloned repository root directory 
+ 5. Install required gems: `$ bundle install`
+ 6. Run the site: `$ bundle exec jekyll serve`
 
-In the _config.yml file, the base URL is set to /startbootstrap-clean-blog-jekyll which is this themes gh-pages preview. It's recommended that you remove the base URL before working with this theme locally!
+### Credits:
 
-It should look like this:
-`baseurl: ""`
-
-## What's Included
-
-A full Jekyll environment is included with this theme. If you have Jekyll installed, simply run `jekyll serve` in your command line and preview the build in your browser. You can use `jekyll serve --watch` to watch for changes in the source files as well.
-
-A Grunt environment is also included. There are a number of tasks it performs like minification of the JavaScript, compiling of the LESS files, adding banners to apply the MIT license, and watching for changes. Run the grunt default task by entering `grunt` into your command line which will build the files. You can use `grunt watch` if you are working on the JavaScript or the LESS.
-
-You can run `jekyll serve --watch` and `grunt watch` at the same time to watch for changes and then build them all at once.
-
-## Support
-
-Visit Clean Blog's template overview page on Start Bootstrap at http://startbootstrap.com/template-overviews/clean-blog/ and leave a comment, email feedback@startbootstrap.com, or open an issue here on GitHub for support.
+Created by [Renan Taranto](https://www.renantaranto.com).
