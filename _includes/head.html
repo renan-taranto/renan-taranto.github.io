@@ -32,4 +32,8 @@
 
     {% feed_meta %}
 
+    {% if jekyll.environment == 'production' %}
+        {% include ga.html %}
+    {% endif %}
+
 </head>
