@@ -13,7 +13,7 @@ description: "Desenvolvimento de software com foco em arquitetura e design orien
         </h3>
       {% endif %}
     </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+    <p class="post-meta">Postado por {{ site.title }} em {% assign subject = post %} {% include date.html %}</p>
 </div>
 <hr>
 {% endfor %}
@@ -23,12 +23,12 @@ description: "Desenvolvimento de software com foco em arquitetura e design orien
   <ul class="pager">
     {% if paginator.previous_page %}
       <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Mais Novos</a>
       </li>
     {% endif %}
     {% if paginator.next_page %}
       <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Mais Antigos &rarr;</a>
       </li>
     {% endif %}
   </ul>
