@@ -12,7 +12,7 @@ layout: default
                     {% if page.subtitle %}
                       <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% endif %}
-                    <span class="meta">Postado por {{ site.title }} em {% assign subject = page %} {% include date.html %}</span>
+                    <span class="meta">Postado por {{ site.title }} em {% include date.html date=page.date %}</span>
                 </div>
             </div>
         </div>

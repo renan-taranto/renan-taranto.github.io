@@ -13,7 +13,7 @@ description: "Desenvolvimento de software com foco em arquitetura e design orien
         </h3>
       {% endif %}
     </a>
-    <p class="post-meta">Postado por {{ site.title }} em {% assign subject = post %} {% include date.html %}</p>
+    <p class="post-meta">Postado por {{ site.title }} em {% include date.html date=post.date %}</p>
 </div>
 <hr>
 {% endfor %}
