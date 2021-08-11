@@ -1,7 +1,17 @@
-collections:
-  authors:
-    output: true
-
+title: Renan Taranto
+tagline: Software Development
+description: Software architecture, engineering and design. A journey to quality and continuous improvement.
+url: https://www.renantaranto.com
+author: Renan Taranto
+social:
+  name: Renan Taranto
+  links:
+    - https://twitter.com/RenanTaranto
+    - https://www.linkedin.com/in/renan-taranto
+    - https://github.com/renan-taranto
+twitter:
+  username: RenanTaranto
+  card: summary
 defaults:
   - scope:
       path: ""
@@ -12,6 +22,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      image: /assets/images/renan-taranto.jpeg
 
 sass:
   style: compressed
