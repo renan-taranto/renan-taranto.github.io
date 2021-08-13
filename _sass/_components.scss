@@ -1,0 +1,102 @@
+.container {
+    max-width: 64em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.header {
+    background-color: $color-header-background;
+    color: $color-header-text;
+}
+
+.header__title {
+    font-size: 64px;
+    word-wrap: break-word;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    line-height: 1.0125;
+}
+
+.header__description {
+    font-size: 20px;
+}
+
+.navigation {
+    text-align: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+}
+
+.navigation__link {
+    margin-right: 16px;
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+.card {
+    min-height: 100px;
+    width: 100%;
+    border-top: 1px solid;
+    cursor: inherit;
+    padding-bottom: 50px;
+}
+
+.card__icon {
+    margin-top: 32px;
+    margin-right: 5px;
+    height: 32px;
+    width: 32px;
+    fill: $color-card-icon;
+}
+
+.card__icon--primary {
+    fill: $color-primary;
+}
+
+.posts {
+    padding-top: 64px;
+}
+
+.post {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.post__date {
+    color: $color-primary;
+    font-weight: bold;
+}
+
+.post__title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.post__link:hover {
+    color: $color-primary;
+}
+
+.post__excerpt {
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .header__title {
+        font-size: 128px;
+    }
+    .card {
+        max-width: 330px;
+    }
+    .card--right {
+        margin-left: 65px;
+    }
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: $body-font-family;
+  src: url($body-font-url-regular) format($body-font-format);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $body-font-family;
+  src: url($body-font-url-italic) format($body-font-format);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: $body-font-family;
+  src: url($body-font-url-bold) format($body-font-format);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $body-font-family;
+  src: url($body-font-url-bold-italic) format($body-font-format);
+  font-weight: bold;
+  font-style: italic;
+}

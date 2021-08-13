@@ -1,0 +1,33 @@
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: $body-font-family, Arial, sans-serif;
+}
+
+html, body {
+  font-size: $body-font-size;
+  line-height: 1.5;
+  color: $color-body-text;
+  background-color: $color-body-background;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+}
+
+h1 { font-size: $h1-font-size; }
+h2 { font-size: $h2-font-size; }
+h3 { font-size: $h3-font-size; }
+h4 { font-size: $h4-font-size; }
+h5 { font-size: $h5-font-size; }
+h6 { font-size: $h6-font-size; text-transform: uppercase; letter-spacing: 0.02em; }
