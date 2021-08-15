@@ -31,3 +31,23 @@ h3 { font-size: $h3-font-size; }
 h4 { font-size: $h4-font-size; }
 h5 { font-size: $h5-font-size; }
 h6 { font-size: $h6-font-size; text-transform: uppercase; letter-spacing: 0.02em; }
+
+.pull-right {
+  float: right;
+}
+
+@media (min-width: $breakpoint-md) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+.visible-md {
+  display: none;
+}
+
+@media (min-width: $breakpoint-md) {
+  .visible-md {
+    display: block !important;
+  }
+}
