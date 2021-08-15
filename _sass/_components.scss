@@ -42,6 +42,25 @@
     }
 }
 
+.footer {
+    border-top: 1px solid $color-gray-darken;
+}
+
+.footer__content {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 12px;
+}
+
+.footer__link {
+    color: $color-primary;
+    margin-left: 10px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .card {
     min-height: 100px;
     width: 100%;
