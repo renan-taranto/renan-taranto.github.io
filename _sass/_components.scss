@@ -39,6 +39,7 @@
 
     &:hover {
         color: $color-primary;
+        @include transition(color .1s ease-in);
     }
 }
 
@@ -75,6 +76,11 @@
     height: 32px;
     width: 32px;
     fill: $color-card-icon;
+
+    &:hover {
+        fill: $color-primary;
+        @include transition(fill .1s ease-in);
+    }
 }
 
 .card__icon--primary {
@@ -109,6 +115,7 @@
 }
 
 .post__link:hover {
+    @include transition(color .1s ease-in);
     color: $color-primary;
 }
 
