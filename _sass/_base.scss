@@ -4,10 +4,16 @@ html, button, input, select, textarea,
 }
 
 html, body {
+  height: 100%;
   font-size: $body-font-size;
   line-height: 1.5;
   color: $color-body-text;
   background-color: $color-body-background;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 a {
