@@ -1,7 +1,5 @@
-<nav class="navigation">
-    {% for item in site.data.navigation %}
-    <a class="navigation__link" href="{{ item.link }}">
-        {{ item.name }}
-        {% endfor %}
-    </a>
+<nav class="navigation navigation--dark">
+    <div class="navigation__content">
+        {% include menu.html %}
+    </div>
 </nav>

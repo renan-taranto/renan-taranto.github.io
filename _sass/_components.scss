@@ -15,7 +15,7 @@
     font-size: 64px;
     word-wrap: break-word;
     word-spacing: 64em;
-    margin-top: 32px + $navigation-padding-bottom + $navigation-border-size;
+    margin-top: 32px + $navigation-padding-vertical + $navigation-border-size;
     margin-bottom: 0;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -23,20 +23,35 @@
 }
 
 .navigation {
-    color: $color-header-text;
+    background: $color-body-background;
     position: fixed;
     width: 100%;
-    background: $color-gray-darken;
-    text-align: right;
-    padding-top: $navigation-padding-top;
-    padding-bottom: $navigation-padding-bottom;
-    font-weight: bold;
+    padding-top: $navigation-padding-vertical;
+    padding-bottom: $navigation-padding-vertical;
     border-bottom: $navigation-border-size solid;
 }
 
-.navigation__link {
-    margin-right: 16px;
+.navigation--dark {
+    background: $color-gray-darken;
+    color: white;
+}
 
+.navigation__content {
+    font-weight: bold;
+    margin-left: $navigation-content-margin-horizontal;
+    margin-right: $navigation-content-margin-horizontal;
+}
+
+.home {
+    color: $color-primary;
+}
+
+.menu {
+    float: right;
+}
+
+.menu__link {
+    margin-left: 16px;
     &:hover {
         color: $color-primary;
         @include transition(color .1s ease-in);
