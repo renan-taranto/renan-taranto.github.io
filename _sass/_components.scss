@@ -1,12 +1,16 @@
 .container {
-    max-width: 64em;
+    max-width: $container-max-width;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-.header {
+.header--index {
+    padding-bottom: 2.5em;
+}
+
+.header--dark {
     background-color: $color-header-background;
     color: $color-header-text;
 }
@@ -14,8 +18,8 @@
 .header__title {
     font-size: 64px;
     word-wrap: break-word;
-    word-spacing: 64em;
-    margin-top: 32px + $navigation-padding-vertical + $navigation-border-size;
+    word-spacing: $container-max-width;
+    margin-top: $navigation-height + ($navigation-padding-vertical * 2);
     margin-bottom: 0;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -23,6 +27,8 @@
 }
 
 .navigation {
+    height: $navigation-height;
+    font-size: $font-size-small;
     background: $color-body-background;
     position: fixed;
     width: 100%;
@@ -51,7 +57,7 @@
 }
 
 .menu__link {
-    margin-left: 16px;
+    margin-left: 1em;
     &:hover {
         color: $color-primary;
         @include transition(color .1s ease-in);
@@ -64,18 +70,18 @@
 
 .footer {
     flex-shrink: 0;
-    border-top: 1px solid $color-gray-darken;
+    border-top: 0.08em solid $color-gray-darken;
 }
 
 .footer__content {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-size: 12px;
+    font-size: $font-size-x-small;
+    padding-top: .66em;
+    padding-bottom: .66em;
 }
 
 .footer__link {
     color: $color-primary;
-    margin-left: 10px;
+    margin-left: .83em;
 
     &:hover {
         text-decoration: underline;
@@ -83,18 +89,16 @@
 }
 
 .card {
-    min-height: 100px;
     width: 100%;
     border-top: 1px solid;
     cursor: inherit;
-    padding-bottom: 50px;
 }
 
 .card__icon {
-    margin-top: 32px;
-    margin-right: 5px;
-    height: 32px;
-    width: 32px;
+    margin-top: 1.6em;
+    margin-right: .25em;
+    height: 1.6em;
+    width: 1.6em;
     fill: $color-card-icon;
 
     &:hover {
@@ -108,20 +112,19 @@
 }
 
 .card__text {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 1em;
     line-height: 1.25;
 }
 
 .posts {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 3.2em;
+    padding-bottom: 3.2em;
 }
 
 .post {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-bottom: 16px;
+    padding-top: .8em;
+    padding-bottom: .8em;
+    margin-bottom: .8em;
 }
 
 .post__date {
@@ -139,10 +142,6 @@
     color: $color-primary;
 }
 
-.post__excerpt {
-    font-size: 20px;
-}
-
 @media (min-width: $breakpoint-sm) {
     .header__title {
         font-size: 84px;
@@ -155,15 +154,11 @@
     }
 
     .card {
-        max-width: 330px;
+        max-width: 16.5em;
     }
 
     .card--right {
-        margin-left: 65px;
-    }
-
-    .header {
-        padding-left: 28px;
+        margin-left: 3.25em;
     }
 
     .header__title {

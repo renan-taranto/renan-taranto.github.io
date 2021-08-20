@@ -1,0 +1,116 @@
+.prose {
+    p {
+        margin-bottom: 1em;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    a {
+        color: $color-primary;
+        text-decoration: underline dotted;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    pre {
+        border-left: .5em solid $color-gray-lighten;
+        margin: 2em 0;
+        padding-left: 1em;
+        overflow-x: auto;
+    }
+
+    blockquote {
+        font-size: 24px;
+        border-left: 8px solid #ddd;
+        line-height: 1.375em;
+        font-style: italic;
+        padding-left: 1em;
+        margin: 48px 0 48px;
+    }
+
+    ul, ol {
+        margin-top: 0;
+    }
+
+    dl {
+        font-size: $font-size-small;
+    }
+
+    dt {
+        font-weight: bold;
+        font-style: italic;
+        line-height: 1.25;
+    }
+
+    dd {
+        font-style: italic;
+        padding-left: 0;
+        margin: 0 0 .5em 0;
+    }
+
+    ul li::marker {
+        font-size: .8em;
+    }
+
+    li {
+        margin-bottom: .5em;
+    }
+
+    hr {
+        color: $color-gray-darken;
+        border-style: solid;
+        border-width: thin;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+    table {
+        font-size: $font-size-small;
+        border-collapse: collapse;
+        display: block;
+        width: 100%;
+        margin-bottom: 1.5em;
+        overflow: auto;
+        // For Firefox to horizontally scroll wider tables.
+        word-break: normal;
+        word-break: keep-all;
+
+        th {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        th,
+        td {
+            border-top: .05em solid $color-body-text;
+            border-bottom: .05em solid $color-body-text;
+            padding: 1em 2em 1em .25em;
+        }
+
+        tr {
+            background-color: #fff;
+            border-top: .05em solid $color-body-text;
+        }
+
+        tr th {
+            border-top: .1em solid $color-body-text;
+            border-bottom: .1em solid $color-body-text;
+        }
+    }
+
+    .highlighter-rouge {
+        font-size: $font-size-small;
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .prose {
+        blockquote {
+            font-size: 36px;
+        }
+    }
+}
