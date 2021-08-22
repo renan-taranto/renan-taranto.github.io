@@ -1,0 +1,11 @@
+<div class="posts">
+    {% for post in site.posts %}
+    <div class="pure-g">
+        <div class="post pure-u-1 pure-u-md-4-5">
+            <a class="post__date" href="{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }}</a>
+            <h1 class="post__title"><a class="post__link" href="{{ post.url }}">{{ post.title }}</a></h1>
+            <span>{{ post.excerpt }}</span>
+        </div>
+    </div>
+    {% endfor %}
+</div>
