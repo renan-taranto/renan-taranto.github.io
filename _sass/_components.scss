@@ -137,6 +137,13 @@
     color: $color-primary;
 }
 
+.profile-pic {
+    background: url(/assets/images/renan-taranto.jpg) 200px 0;
+    background-size: 400px;
+    width: 180px;
+    height: 400px;
+}
+
 @media (min-width: $breakpoint-sm) {
     .header__title {
         font-size: 84px;
