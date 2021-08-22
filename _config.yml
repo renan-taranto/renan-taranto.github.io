@@ -14,15 +14,16 @@ twitter:
   card: summary
 defaults:
   - scope:
-      path: "index.html"
+      path: "index.md"
     values:
       navigation: "index-navigation.html"
       header: "index-header.html"
+      layout: "index"
   - scope:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "prose"
   - scope:
       path: ""
     values:

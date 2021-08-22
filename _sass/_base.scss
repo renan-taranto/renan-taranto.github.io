@@ -47,6 +47,19 @@ h6 { font-size: $h6-font-size; text-transform: uppercase; letter-spacing: 0.02em
   color: $color-primary;
 }
 
+.pt-2 {
+  padding-top: 32px;
+}
+.pb-2 {
+  padding-bottom: 32px;
+}
+.pt-3 {
+  padding-top: 64px;
+}
+.pb-3 {
+  padding-bottom: 64px;
+}
+
 @media (min-width: $breakpoint-md) {
   .hidden-md {
     display: none;

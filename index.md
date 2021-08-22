@@ -1,5 +1,4 @@
 ---
-title: Blog
 ---
 
 {% include posts.html %}
