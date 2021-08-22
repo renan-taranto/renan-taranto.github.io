@@ -14,6 +14,11 @@ twitter:
   card: summary
 defaults:
   - scope:
+      path: "index.html"
+    values:
+      navigation: "index-navigation.html"
+      header: "index-header.html"
+  - scope:
       path: ""
       type: "posts"
     values:
@@ -22,6 +27,8 @@ defaults:
       path: ""
     values:
       layout: "default"
+      navigation: "navigation.html"
+      header: "header.html"
       image: /assets/images/renan-taranto.jpeg
 
 sass:
