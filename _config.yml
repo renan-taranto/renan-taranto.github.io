@@ -12,6 +12,9 @@ social:
 twitter:
   username: RenanTaranto
   card: summary
+
+analytics_tracking_id: UA-102354854-1
+
 defaults:
   - scope:
       path: "index.md"
