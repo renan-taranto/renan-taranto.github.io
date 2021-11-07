@@ -1,6 +1,9 @@
 title: Renan Taranto
 tagline: Software Development
 description: Software architecture, engineering and design.
+home_description:
+  en: Software architecture, engineering and design.
+  pt_BR: Arquitetura, engenharia e design de software.
 url: https://www.renantaranto.com
 author: Renan Taranto
 social:
@@ -37,6 +40,12 @@ defaults:
 
 sass:
   style: compressed
+  sourcemap: never
+
+languages: ["en", "pt_BR"]
+default_lang: "en"
+exclude_from_localization: ["assets"]
+parallel_localization: true
 
 plugins:
   - jekyll-feed

@@ -5,6 +5,15 @@
             <a class="footer__link" href="https://github.com/renan-taranto">GitHub</a>
             <a class="footer__link" href="https://www.linkedin.com/in/renan-taranto/">LinkedIn</a>
             <a class="footer__link" href="/feed.xml">Feed</a>
+            {% for language in site.languages %}
+                {% if language != site.active_lang %}
+                    <a class="footer__link"
+                       {% static_href %}href="{% if language == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{language}}{{page.url}}{% endif %}"{% endstatic_href %}
+                    >
+                        {{ language }}
+                    </a>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </div>

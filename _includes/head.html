@@ -4,8 +4,10 @@
     {% endif %}
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="{{ site.active_lang }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
+    {% I18n_Headers %}
     {% feed_meta %}
     {% seo %}
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/base-min.css">

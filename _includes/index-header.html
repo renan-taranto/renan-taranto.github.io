@@ -6,14 +6,17 @@
                 <span class="color-primary">Taranto</span>
             </h1>
         </div>
-
+        {% assign home_description = site.home_description[site.active_lang] %}
+        {% if home_description == nil %}
+            {% assign home_description = site.description %}
+        {% endif %}
         <div class="card hidden-md">
             <div class="pure-g hidden-md">
                 <div class="pure-u-1-2">
                     {% include card-icon-primary.html %}
                     {% include card-icon-primary.html %}
                     {% include card-icon-github.html %}
-                    <p class="card__text">{{ site.description }}</p>
+                    <p class="card__text">{{ home_description }}</p>
                 </div>
                 <div class="pure-u-1-2">
                     {% include card-icon-linkedin.html %}
@@ -28,7 +31,7 @@
                     {% include card-icon-primary.html %}
                     {% include card-icon-primary.html %}
                     {% include card-icon-github.html %}
-                    <p class="card__text">{{ site.description }}</p>
+                    <p class="card__text">{{ home_description }}</p>
                 </div>
             </div>
             <div class="pure-u-md-1-3">
