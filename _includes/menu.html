@@ -1,4 +1,6 @@
 <div class="menu">
+    {% include i18n-links.html anchor_class='menu__link' %}
+
     {% for item in site.data.navigation %}
         <a class="menu__link" href="{{ item.link }}">
             {{ item.name }}

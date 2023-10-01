@@ -55,6 +55,7 @@
 }
 
 .menu__link {
+    margin-left: 10px;
     &:hover {
         color: $color-primary;
         @include transition(color .1s ease-in);
