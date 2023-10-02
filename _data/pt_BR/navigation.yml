@@ -1,2 +1,5 @@
+- name: Ferramentas
+  link: /tools/
+
 - name: Sobre
   link: /about/

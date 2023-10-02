@@ -1,2 +1,5 @@
+- name: Tools
+  link: /tools/
+
 - name: About
   link: /about/
