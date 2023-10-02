@@ -5,8 +5,8 @@ proposal:
   en_US: Software development advisory
   pt_BR: Assessoria em desenvolvimento de software
 focus:
-  en_US: Software quality, engineering and architecture
-  pt_BR: Engenharia, arquitetura e qualidade de software
+  en_US: Software architecture and quality
+  pt_BR: Arquitetura e qualidade de software
 url: https://www.renantaranto.com
 author: Renan Taranto
 social:

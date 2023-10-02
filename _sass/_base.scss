@@ -60,18 +60,24 @@ h6 { font-size: $h6-font-size; text-transform: uppercase; letter-spacing: 0.02em
   padding-bottom: 64px;
 }
 
-@media (min-width: $breakpoint-md) {
-  .hidden-md {
-    display: none;
-  }
-}
-
 .visible-md {
   display: none;
 }
 
 @media (min-width: $breakpoint-md) {
+  .hidden-md {
+    display: none;
+  }
   .visible-md {
     display: block !important;
+  }
+  .img__right {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .img__right {
+    margin-left: 30px;
   }
 }
