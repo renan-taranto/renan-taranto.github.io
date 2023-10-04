@@ -124,6 +124,12 @@
     color: $color-primary;
 }
 
+.img--tools {
+    max-width: 300px !important;
+    display: block;
+    margin-left: auto;
+}
+
 @media (min-width: $breakpoint-sm) {
     .header__title {
         font-size: 84px;

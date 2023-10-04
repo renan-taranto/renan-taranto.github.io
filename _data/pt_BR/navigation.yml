@@ -1,5 +1,5 @@
-- name: Apps
-  link: /apps/
+- name: Ferramentas
+  link: /tools/
 
 - name: Sobre
   link: /about/

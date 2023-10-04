@@ -68,8 +68,21 @@ h6 { font-size: $h6-font-size; text-transform: uppercase; letter-spacing: 0.02em
   padding-bottom: 64px;
 }
 
+.visible-ml {
+  display: none;
+}
+
 .visible-md {
   display: none;
+}
+
+@media (min-width: $breakpoint-ml) {
+  .hidden-ml {
+    display: none;
+  }
+  .visible-ml {
+    display: block !important;
+  }
 }
 
 @media (min-width: $breakpoint-md) {
