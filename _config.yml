@@ -1,26 +1,4 @@
-title: Renan Taranto
-tagline: Software Development
-description: Software architecture, engineering and design
-proposal:
-  en_US: Software development advisory
-  pt_BR: Assessoria em desenvolvimento de software
-focus:
-  en_US: Software architecture and quality
-  pt_BR: Arquitetura e qualidade de software
-url: https://www.renantaranto.com
-author: Renan Taranto
-social:
-  name: Renan Taranto
-  links:
-    - https://twitter.com/RenanTaranto
-    - https://www.linkedin.com/in/renan-taranto
-    - https://github.com/renan-taranto
-twitter:
-  username: RenanTaranto
-  card: summary
-
-analytics_tracking_id: UA-102354854-1
-
+# Front Matter Defaults
 defaults:
   - scope:
       path: "index.md"
@@ -41,16 +19,46 @@ defaults:
       header: "header.html"
       image: /assets/images/renan-taranto.jpeg
 
+# Sass
 sass:
   style: compressed
   sourcemap: never
 
+# jekyll-seo-tag
+title: Renan Taranto
+tagline: Software Architect
+description: Software Architect
+url: https://www.renantaranto.com
+author: Renan Taranto
+social:
+  name: Renan Taranto
+  links:
+    - https://www.linkedin.com/in/renan-taranto
+    - https://github.com/renan-taranto
+twitter:
+  username: RenanTaranto
+  card: summary
+
+# Google Analytics
+analytics_tracking_id: UA-102354854-1
+
+# jekyll-polyglot
 languages: ["en_US", "pt_BR"]
 default_lang: "en_US"
 exclude_from_localization: ["assets"]
 parallel_localization: true
 
+# User added
+social_links:
+  linkedin: https://www.linkedin.com/in/renan-taranto
+  github: https://github.com/renan-taranto
+proposal:
+  en_US: Software development and advisory
+  pt_BR: Assessoria e desenvolvimento de software.
+
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-polyglot

@@ -19,12 +19,14 @@ $h6-font-size: 12px;
 
 $color-gray-lighten: #ddd;
 $color-gray-darken: #181818;
-$color-primary: #ec5336;
+$color-white: #ffffff;
+$color-orange: #ec5336;
+
+$color-primary: $color-orange;
 $color-body-text: $color-gray-darken;
-$color-body-background: #FFF;
-$color-header-text: #FFF;
+$color-body-background: $color-white;
+$color-header-text: $color-white;
 $color-header-background: $color-gray-darken;
-$color-card-icon: #FFF;
 
 $navigation-height: 24px;
 $navigation-padding-vertical: 8px;

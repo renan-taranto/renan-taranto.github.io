@@ -47,6 +47,14 @@ h6 { font-size: $h6-font-size; text-transform: uppercase; letter-spacing: 0.02em
   color: $color-primary;
 }
 
+.fill-white {
+  fill: $color-white;
+}
+
+.fill-primary {
+  fill: $color-primary;
+}
+
 .pt-2 {
   padding-top: 32px;
 }
