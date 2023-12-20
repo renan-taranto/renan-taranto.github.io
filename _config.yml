@@ -53,8 +53,8 @@ social_links:
   linkedin: https://www.linkedin.com/in/renan-taranto
   github: https://github.com/renan-taranto
 proposal:
-  en_US: Software development and advisory
-  pt_BR: Assessoria e desenvolvimento de software.
+  en_US: Software Architecture and Quality
+  pt_BR: Arquitetura e Qualidade de Software
 
 # Plugins
 plugins:
